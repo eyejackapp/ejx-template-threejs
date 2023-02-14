@@ -19,9 +19,9 @@
 			}
 		</script>
 		<script type="module">
-
 			import * as THREE from 'three';
 			import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+		  import { showThreeLaunchButton } from '@eyejack/ejx-launcher-button';
 			import { ARButton } from 'three/addons/webxr/ARButton.js';
 
 			let container;
@@ -97,7 +97,7 @@
 				renderer.xr.enabled = true;
 				container.appendChild( renderer.domElement );
 
-				document.body.appendChild( ARButton.createButton( renderer ) );
+		    showThreeLaunchButton(renderer);
 
 				window.addEventListener( 'resize', onWindowResize );
 

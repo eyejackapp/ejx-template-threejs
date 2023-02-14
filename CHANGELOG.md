@@ -1,5 +1,13 @@
 # ejx-template-cube
 
+## 0.1.4
+
+### Patch Changes
+
+- Added AR launcher button to threejs template
+- Updated dependencies
+  - @eyejack/ejx-launcher-button@0.0.2
+
 ## 0.1.3
 
 ### Patch Changes

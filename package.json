@@ -1,26 +1,24 @@
 {
   "name": "@eyejack/ejx-template-threejs",
+  "description": "EyeJack X Template for creating three js experiences for web XR.",
   "private": true,
   "version": "0.1.4",
   "type": "module",
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "upload": "npm run build && ejx upload"
   },
   "devDependencies": {
     "@types/three": "^0.149.0",
-    "rollup-plugin-visualizer": "^5.9.0",
     "three": "^0.149.0",
     "vite": "^4.1.0",
     "vite-plugin-mkcert": "^1.13.0"
   },
   "dependencies": {
-    "@eyejack/ejx": "*",
-    "@eyejack/ejx-launcher-button": "*",
+    "@eyejack/ejx": "^0.2.1",
+    "@eyejack/ejx-launcher-button": "^0.0.2",
     "three": "^0.149.0"
-  },
-  "peerDependencies": {
-    "lil-gui": "^0.17.0"
   }
 }

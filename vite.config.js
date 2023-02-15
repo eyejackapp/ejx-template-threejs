@@ -13,13 +13,12 @@ export default defineConfig({
     target: "esnext",
     minify: false,
     rollupOptions: {
-      external: ['@eyejackapp/ejx-lib', 'three'],
+      external: ['@eyejackapp/ejx-lib'],
       output: {
         entryFileNames: '[name].js',
         chunkFileNames: '[name].js',
         assetFileNames: '[name].[ext]',
         globals: {
-          'three': 'THREE',
           '@eyejackapp/ejx-lib': 'eyejack',
         }
       }

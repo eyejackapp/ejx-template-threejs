@@ -7,13 +7,17 @@ This is a template project for building Web XR experiences using
 
 ## Getting Started
 
-1. Clone this project.
-  a. `$ npx degit https://github.com/eyejackapp/ejx-template-threejs <your-project-name>`
-2. Jump into your directory and install dependencies
-  a. `$ cd <your-project-name>`
-  b. `$ npm i`
-3. Start the dev server
-  a. `$ npm run dev`
-4. When you're ready, publish your experience!
-  a. `$ npm run publish`
+```bash
+# 1. Clone this project 
+npx degit https://github.com/eyejackapp/ejx-template-threejs <your-project-name>
 
+# 2. Jump into your project and install dependencies
+cd <your-project-name>
+npm i
+
+# 3. Start the dev server and start building!
+npm run dev
+
+# 4. When you're ready to publish, upload to eyejack.
+npm run publish
+```

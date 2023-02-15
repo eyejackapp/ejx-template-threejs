@@ -1,5 +1,13 @@
 # ejx-template-cube
 
+## 0.1.5
+
+### Patch Changes
+
+- Updated dependencies
+- Updated dependencies [fa8dd52]
+  - @eyejack/ejx-launcher-button@0.0.3
+
 ## 0.1.4
 
 ### Patch Changes

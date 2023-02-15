@@ -1,5 +1,4 @@
 import { defineConfig } from 'vite';
-import { visualizer } from "rollup-plugin-visualizer";
 import mkcert from 'vite-plugin-mkcert';
 
 export default defineConfig({
@@ -14,9 +13,6 @@ export default defineConfig({
     target: "esnext",
     minify: false,
     rollupOptions: {
-      plugins: [
-        visualizer(),
-      ],
       external: ['@eyejackapp/ejx-lib', 'three'],
       output: {
         entryFileNames: '[name].js',

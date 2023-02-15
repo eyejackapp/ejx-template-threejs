@@ -17,7 +17,7 @@
     "vite-plugin-mkcert": "^1.13.0"
   },
   "dependencies": {
-    "@eyejack/ejx": "^0.2.1",
+    "@eyejack/ejx": "^0.3.0",
     "@eyejack/ejx-launcher-button": "^0.0.3",
     "three": "^0.149.0"
   }

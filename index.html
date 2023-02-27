@@ -20,7 +20,7 @@
 			let renderer;
 			let group;
 			let controller;
-			let reticle;
+			let reticle;	
 			let hitTestSource = null;
 			let hitTestSourceRequested = false;
 
@@ -107,11 +107,9 @@
 				controller.addEventListener( 'select', onHitTestTouch.bind(this) );
 				scene.add( controller );
 
-				showThreeLaunchButton(renderer);
-
-				// showThreeLaunchButton(renderer, {
-				// 	requiredFeatures: ['hit-test'],
-				// });
+				showThreeLaunchButton(renderer, {
+					requiredFeatures: ['hit-test'],
+				});
 
 				window.addEventListener( 'resize', onWindowResize );
 			}

@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@eyejack/ejx": "^0.8.0",
-    "@eyejack/ejx-launcher-button": "^0.2.0",
+    "@eyejack/ejx-launcher-button": "^0.2.5",
     "three": "^0.149.0"
   }
 }

@@ -34,6 +34,7 @@
       document.body.appendChild(container);
 
       scene = new THREE.Scene();
+      scene.background = new THREE.Color(0x000000);
 
       camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 10);
       camera.position.set(0, 0, 3);
@@ -103,6 +104,8 @@
       renderer.setSize(window.innerWidth, window.innerHeight);
       renderer.outputEncoding = THREE.sRGBEncoding;
       renderer.xr.enabled = true;
+      renderer.xr.addEventListener('sessionstart', onXRSessionStart.bind(this));
+      renderer.xr.addEventListener('sessionend', onXRSessionEnd.bind(this));
       container.appendChild(renderer.domElement);
 
       controller = renderer.xr.getController(0);
@@ -117,6 +120,17 @@
       });
 
       window.addEventListener('resize', onWindowResize);
+    }
+
+    function onXRSessionStart() {
+      scene.background = null; // clear scene background so we can see the camera image.
+    }
+
+    function onXRSessionEnd() {
+      scene.background = new THREE.Color(0x000000);
+      camera.position.set(0, 0, 3);
+      camera.lookAt(0, 0, 0);
+      camera.updateMatrixWorld();
     }
 
     function onHitTestTouch() {

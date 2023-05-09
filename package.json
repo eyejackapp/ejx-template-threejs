@@ -2,7 +2,7 @@
   "name": "@eyejack/ejx-template-threejs",
   "description": "EyeJack X Template for creating three js experiences for web XR.",
   "private": true,
-  "version": "0.1.12",
+  "version": "0.1.13",
   "type": "module",
   "scripts": {
     "dev": "vite --host",
@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@eyejack/ejx": "^0.8.0",
-    "@eyejack/ejx-launcher-button": "^0.3.0",
+    "@eyejack/ejx-launcher-button": "^0.4.0",
     "three": "^0.149.0"
   }
 }

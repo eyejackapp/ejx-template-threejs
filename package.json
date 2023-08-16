@@ -12,13 +12,13 @@
   },
   "devDependencies": {
     "@types/three": "^0.149.0",
-    "three": "^0.149.0",
+    "three": "^0.151.2",
     "vite": "^4.1.0",
     "vite-plugin-mkcert": "^1.13.0"
   },
   "dependencies": {
     "@eyejack/ejx": "^0.8.0",
     "@eyejack/ejx-launcher-button": "^0.6.0",
-    "three": "^0.149.0"
+    "three": "^0.151.2"
   }
 }
